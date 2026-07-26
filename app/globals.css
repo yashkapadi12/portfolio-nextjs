@@ -1,0 +1,86 @@
+@import "./portfolio.css";
+
+:root {
+  --bg: #07090e;
+  --bg-raised: #0d121c;
+  --bg-card: #121926;
+  --line: rgba(56, 74, 104, 0.35);
+  --line-light: rgba(56, 74, 104, 0.15);
+  --text: #f1f5f9;
+  --text-dim: #94a3b8;
+  --text-faint: #475569;
+  --pass: #10b981;
+  --pass-dim: #059669;
+  --pass-glow: rgba(16, 185, 129, 0.12);
+  --amber: #f59e0b;
+  --amber-dim: #d97706;
+  --amber-glow: rgba(245, 158, 11, 0.12);
+  --blue: #3b82f6;
+  --blue-glow: rgba(59, 130, 246, 0.12);
+  --purple: #8b5cf6;
+  --purple-glow: rgba(139, 92, 246, 0.12);
+  --accent: #ec4899;
+  --accent-glow: rgba(236, 72, 153, 0.12);
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: 
+    linear-gradient(var(--line-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-light) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center top;
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 700px;
+  background: radial-gradient(circle 600px at 50% 150px, rgba(139, 92, 246, 0.08), transparent 80%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--purple);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
