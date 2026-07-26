@@ -1,58 +1,133 @@
-# Yash Kapadi — DevOps & Cloud Infrastructure Portfolio
+# Yash Kapadi — Portfolio
 
-An interactive, DevOps-focused developer portfolio built with **Next.js (App Router)** and **Framer Motion**. This project serves as an interactive showcase of technical skills, professional experience, and operational automation capabilities.
+A modern, animated developer portfolio built with **Next.js**, **React**, and **Framer Motion**.
 
----
+The portfolio showcases my experience across software development, DevOps, cloud infrastructure, automation, and modern web technologies.
 
-## 🚀 Key Highlights & Interactive Features
+## 🚀 Tech Stack
 
-* **Interactive CLI Terminal**: A functional browser-based shell simulator parsing user commands (`about`, `skills`, `experience`, `contact`) with support for auto-complete (Tab) and command history navigation.
-* **CI/CD Pipeline Simulator**: A real-time build, test, and containerized deployment simulation showing sequential Maven compilation, Pytest execution, Docker builds, and Terraform orchestration.
-* **AWS Topology Telemetry Visualizer**: An interactive cloud infrastructure diagram mapping Route53, CloudFront, Application Load Balancers, ECS clusters, S3, and RDS layers with live hover-state metrics.
-* **System Metrics Monitoring**: Live status tracking indicators mimicking CPU load, RAM allocation, and cluster uptime.
+* Next.js
+* React.js
+* Framer Motion
+* JavaScript
+* CSS
+* Responsive Design
 
----
+## 🛠️ Run Locally
 
-## 🛠 Tech Stack
+Clone the repository and install the dependencies:
 
-* **Frontend Architecture**: Next.js (App Router), React, Framer Motion, Vanilla CSS
-* **Cloud & Infrastructure (AWS)**: EC2, ECS, S3, CloudFront, Route53, Application Load Balancer, RDS
-* **Infrastructure as Code (IaC)**: Terraform, Ansible
-* **Automation & CI/CD**: Jenkins, n8n, Bash Scripting
-* **Development Stack**: Python, Java, Spring Boot, ReactJS
-* **Operating Systems**: Linux (Ubuntu, Alpine)
-
----
-
-## ⚙️ Development Lifecycle
-
-### Prerequisites
-* Node.js (v18.0.0 or higher)
-* npm (v10.0.0 or higher)
-
-### Setup & Local Development
 ```bash
-# Install dependencies
+git clone <your-repository-url>
+cd portfolio-nextjs
 npm install
+```
 
-# Start the development server
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-### Production Build & Deployment
-```bash
-# Build the optimized production bundle
-npm run build
+Open http://localhost:3000 in your browser.
 
-# Start the production server locally
+## 📸 Add Your Profile Photo
+
+1. Add your image to:
+
+```text
+public/profile.jpg
+```
+
+2. Open:
+
+```text
+components/Portfolio.jsx
+```
+
+3. Find the `PROFILE PHOTO SLOT` comment and replace:
+
+```jsx
+<div className="avatar">YK</div>
+```
+
+with:
+
+```jsx
+<div className="avatar">
+  <img src="/profile.jpg" alt="Yash Kapadi" />
+</div>
+```
+
+## ✨ Features
+
+* Animated terminal-style introduction
+* Typing animation for commands such as `whoami` and `cat role.txt`
+* Animated hero section with staggered transitions
+* Profile photo section
+* Experience timeline
+* Technology and skills showcase
+* Animated cards using Framer Motion
+* Scroll-based reveal animations
+* Hover animations and interactive UI elements
+* Education and contact sections
+* Responsive design for desktop and mobile devices
+
+## 🌐 Deployment
+
+The easiest way to deploy this Next.js portfolio is using Vercel.
+
+1. Push the project to a GitHub repository.
+2. Import the repository into Vercel.
+3. Keep the default settings.
+4. Click **Deploy**.
+
+You can also run the production build locally:
+
+```bash
+npm run build
 npm run start
 ```
 
+The application can also be deployed to any Node.js-compatible hosting platform.
+
+## 📁 Project Structure
+
+```text
+portfolio-nextjs/
+├── app/
+├── components/
+│   └── Portfolio.jsx
+├── public/
+│   └── profile.jpg
+├── package.json
+└── README.md
+```
+
+## 👨‍💻 About Me
+
+I am a software developer and DevOps engineer with experience in:
+
+* React.js
+* Java Spring Boot
+* Node.js
+* Python
+* MySQL
+* PostgreSQL
+* Docker
+* Jenkins
+* AWS
+* Terraform
+* CI/CD
+* Linux
+* Cloud Infrastructure
+
+I enjoy building scalable applications, automating infrastructure, and learning modern cloud and DevOps technologies.
+
+## 📬 Contact
+
+Feel free to connect with me for collaboration, opportunities, or interesting technical discussions.
+
 ---
 
-## 📄 Repository Structure & Configuration
-
-* **`components/Portfolio.jsx`**: Core UI, state machines for the CLI terminal and CI/CD simulation, and portfolio content.
-* **`app/portfolio.css`**: Styling layer, neon color variables, and terminal styling.
-* **`app/layout.jsx`** & **`app/page.jsx`**: Next.js App Router root layout and landing page configurations.
-* **`public/`**: Directory for static assets and public file rendering.
+Built with ❤️ using Next.js and Framer Motion.
