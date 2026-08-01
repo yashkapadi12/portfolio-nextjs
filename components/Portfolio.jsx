@@ -261,7 +261,7 @@ function Terminal() {
         ];
       } else if (lowerCmd.startsWith("sudo")) {
         response = [
-          "🔒 guest is not in the sudoers file. This incident will be reported.",
+          "🔒 yash is not in the sudoers file. This incident will be reported.",
           "⚠️ Unauthorized superuser execution blocked."
         ];
       } else {
@@ -315,7 +315,7 @@ function Terminal() {
         <span className="tdot r" />
         <span className="tdot y" />
         <span className="tdot g" />
-        <span className="terminal-title">guest@yashkapadi: ~</span>
+        <span className="terminal-title">yash@yashkapadi: ~</span>
       </div>
       <div className="terminal-body" ref={bodyRef}>
         {bootLines.map((l, i) => (
