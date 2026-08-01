@@ -1015,7 +1015,6 @@ export default function Portfolio() {
                 GitHub
               </a>
             </div>
-            <div className="foot-note">// build passing — last deployed Jul 2026</div>
           </motion.div>
         </div>
       </footer>
