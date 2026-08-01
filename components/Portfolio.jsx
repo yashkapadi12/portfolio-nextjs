@@ -564,7 +564,8 @@ export default function Portfolio() {
     
     const interval = setInterval(() => {
       if (lineIdx < stageLines.length) {
-        setLogs((prev) => [...prev, stageLines[lineIdx]]);
+        const nextLine = stageLines[lineIdx];
+        setLogs((prev) => [...prev, nextLine]);
         lineIdx++;
       } else {
         clearInterval(interval);
@@ -809,7 +810,7 @@ export default function Portfolio() {
                 </div>
                 <div className="pipeline-console-body" ref={logTerminalEndRef}>
                   {logs.map((logLine, idx) => (
-                    <div key={idx} className={`console-line ${logLine.startsWith("SUCCESS") ? "success" : logLine.startsWith("🎉") || logLine.startsWith("✨") ? "highlight" : ""}`}>
+                    <div key={idx} className={`console-line ${logLine?.startsWith("SUCCESS") ? "success" : (logLine?.startsWith("🎉") || logLine?.startsWith("✨")) ? "highlight" : ""}`}>
                       {logLine}
                     </div>
                   ))}
