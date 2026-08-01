@@ -4,6 +4,10 @@ export const metadata = {
   title: "Yash Kapadi — DevOps Engineer",
   description:
     "Jr. DevOps Engineer — cloud infrastructure, CI/CD pipelines, and automation.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
