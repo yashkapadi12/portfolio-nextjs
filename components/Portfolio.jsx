@@ -548,7 +548,7 @@ export default function Portfolio() {
           "-------------------------------------------",
           "🎉 PIPELINE EXECUTION SUCCESSFUL",
           "✨ Production deployed successfully to AWS EC2 & ECS",
-          "✨ Domain yash.devops is active and running",
+          "✨ Domain yashgkapadi.icu is active and running",
           "-------------------------------------------"
         ]);
         setActiveJobIndex(0); // Select current job at the end
