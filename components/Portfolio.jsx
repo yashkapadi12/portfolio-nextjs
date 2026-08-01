@@ -987,6 +987,8 @@ export default function Portfolio() {
                 <br />
                 → phone: +91 7490947294
                 <br />
+                → whatsapp: wa.me/917490947294
+                <br />
                 → linkedin: linkedin.com/in/yashkapadi6
                 <br />
                 → github: github.com/yashkapadi12
@@ -995,6 +997,14 @@ export default function Portfolio() {
             <div className="contact-links">
               <a className="pill" href="mailto:yashkapadi74909@outlook.com">
                 Email me
+              </a>
+              <a
+                className="pill"
+                href="https://wa.me/917490947294"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
               </a>
               <a
                 className="pill"
